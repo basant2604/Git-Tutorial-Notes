@@ -1,0 +1,45 @@
+git --version
+
+git status  -----> Fatal error
+
+git init   ------> Initialize empty git repository (It uses .git as hidden file in it).
+
+git status   ------> It shows the commits are taken or not (shows files in red color).
+
+git add .    ------> It adds the file to staging portion then you will perform commit operation.
+
+git status   ------> Now it shows the commits (shows files in green color).
+
+
+....................NOW WE HAVE TO SET THE AUTHOR IDENTITY IN THIS SYSTEM..........................
+
+git config --global user.name "Basant"   ---------> Here --global denotes the name is used in every directory.
+
+git config --global user.email "basant@gmail.com"   --------> Here --global denotes the email is used in every directory.
+
+....................NOW THE IDENTITY IS ASSIGNED AND WE WILL CONTINUE THE COMMIT PORTION.......................
+
+
+git commit -m "version 1"   -------> Here (version 1) is the message you want to given to this file and the file commits.
+
+git log   --------> It shows the commit Id and the Author details, Date and Time of changing code.
+
+
+.....................NOW CHANGE SOME CONTENTS IN FILE AND SAVE IT............................
+
+git commit -m "version 2"   --------> It is modified file and commit it to git.
+
+git status   --------> It checks the status of the file.
+
+git log   --------> It shows the Information about all the change on the particular file and we can also go checks our previous modified file.
+
+
+....................TO CHECK THE HOST NAME AND EMAIL.....................
+
+git config --global user.name
+
+git config --global user.email
+
+.........................................................................
+
+
