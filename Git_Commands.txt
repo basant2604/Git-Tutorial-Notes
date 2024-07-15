@@ -43,7 +43,7 @@ git config --global user.email
 .........................................................................
 
 
-Now, we have to create the New Repository in GitHub and then connect the Git with GitHub and for this click on repository and then go to (…or create a new repository on the command line) and copy the (git remote add origin) line and the (ssh link) in the upper side and add both the commands and paste it to the git with an space and then copy the next command (git push -u origin main) and paste in the git it shows error because there is no key present in it. So, we are generating and key for it.
+Now, we have to create the New Repository in GitHub and then connect the Git with GitHub and for this click on repository and then go to (…or create a new repository on the command line) and copy the (git remote add origin) line and the (ssh link) in the upper side and add both the commands and paste it to the git with an space and then copy the next command (git push -u origin master) and paste in the git it shows error because there is no key present in it. So, we are generating and key for it.
 
 Now, go to (setting) and then select (ssh and jpg key) and then go to (connecting to GitHub using ssh key) and then go to (Generating a new SSH key and adding it to the ssh-agent) and then go to (Generating a new ssh key) copy the text of 2nd step and then add your email as uploaded in git.
 
@@ -51,5 +51,6 @@ And the run the command on git (eval $(ssh-agent -s) to show the agent pid (this
 
 then go to (Adding your SSH key to the ssh-agent) section and then go to step 3 and click on (Adding a new SSH key to your GitHub account) and then go to (Adding a new SSH key to your account) section copy the step 1 command (clip < ~/.ssh/id_ed25519.pub) and paste it in git and then paste the same command on the search panel and then copy the text of that search panel and then go to (ssh and gpg keys) in the setting and then click on (New SSH key) and fill the heading of that key and then paste the text in the description box and generate the key. 
 
-Now we have run the command (git push -u origin main) on the git and it do not show error because the ssh key is generated and the git is linked with the GitHub.
+Now we have run the command (git push -u origin master) on the git and it do not show error because the ssh key is generated and the git is linked with the GitHub and the files are pushed in the GitHub successfully.
 
+Now, If we edit file in GitHub and then we have to pull the files of git then we will run the command (git pull origin master) to pull all the updated file on git.
