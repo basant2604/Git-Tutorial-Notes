@@ -93,3 +93,64 @@ Open git bash on that folder
            (it having (.git/) which stores all the hidden files and all information or changes about the file)
 
 --> git clone SSH_link_of_selected_file_of_github 
+
+
+............................................................................
+
+IGNORING FILES IN GIT BY ADDING .gitignore FILE
+
+--> touch .gitignore   (it is used to make a blank file on the folder, and this (.gitignore) includes the files which are not in used which have to ignore)
+
+--> ls -la   (it is used to list all the files of that folder)
+--> notepad .gitignore   (it is used to open (.gitignore) file in the notepad and write the name of the files which have to ignore)
+
+
+............................................................................
+
+BRANCHES IN GIT AND HOW TO DELETE THESE BRANCHES
+
+For understanding Branches in git make a new folder and open it in git bash terminal.
+Now make two txt files on this folder and then we run the commands
+
+--> git init   (it is used to make empty git repository, it having .git hidden files)
+--> ls -la   (to show the list of file which includes .git file in it)
+--> git status
+--> git add .
+--> git commit -m "initial commit"
+--> git log
+--> git status
+
+Now make a new repository in the GitHub and them link it with git. To linking it copy the ssh file path and then run these commands.
+
+--> git remote add origin ssh_link_from_github
+--> git push -u origin master
+
+Now we have to make an different branch which is different from master branch named that branch and do the different things in it and these changes are done in another branch which do not having any impact on the original branch it is different from it and shows the branches in GitHub.
+
+--> git branch   (it shows the branch present in the terminal)
+--> git branch login-system   
+--> git branch
+--> git checkout login-system   (it switched master branch to login-system branch)
+--> git branch
+
+Now we have to make another text file in that folder and having the different data in it.
+
+--> git status
+--> git add .
+--> git commit -m "login-system"
+--> git log
+--> git push origin login-system   (here in place of master it uses login-system, because we are in login-system branch)
+--> git branch
+--> git checkout master   (to again switch the branch to master)
+--> git branch
+
+Now we have to merge both the branches in one branch then we have to run the commands
+
+--> git merge login-system   (used to merge both the branches)
+--> git push -u origin master   (used to push the files on the GitHub)
+
+Now we have to delete the unused branches from the git and GitHub.
+
+--> git branch -d login-system   (it is used to delete the login-system from the git bash repository)
+--> git branch
+--> git push origin --delete login-system   (it is used to delete the login-system from the GitHub)
