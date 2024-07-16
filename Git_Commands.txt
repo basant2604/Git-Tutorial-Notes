@@ -54,3 +54,42 @@ then go to (Adding your SSH key to the ssh-agent) section and then go to step 3 
 Now we have run the command (git push -u origin master) on the git and it do not show error because the ssh key is generated and the git is linked with the GitHub and the files are pushed in the GitHub successfully.
 
 Now, If we edit file in GitHub and then we have to pull the files of git then we will run the command (git pull origin master) to pull all the updated file on git.
+
+
+.........................................................................
+
+Now we have to check the updated file what we have edited in it.
+use command
+--> git status (it shows the uncommit files)
+--> git diff Utility.txt  or  git diff   (it shows the updated item of the file)
+--> git add . 
+
+AFTER ADD A FILE THEN IT WILL NOT SHOWS THE UPDATED ITEM WHEN RUN THE COMMAND ( git diff Utility.txt ).
+
+--> git diff --staged Utility.txt   (to check the updated item of file after run the command add . )
+--> git status   (it shows the modified file)
+
+IF WE HAVE TO REMOVE THE UPDATED CHANGE FROM THE GIT THEN WE HAVE TO RUN THE COMMAND
+
+--> git status 
+--> git reset Utility.txt   (it resets the file to the second last commit)
+--> git status   (it shows the file in red color)
+--> git checkout Utility.txt   (it removes the last updated item from the file)
+
+
+............................................................................
+
+* --> git add -a (stages All)
+* --> add . (stages new and modified, without deleted)
+* --> git add -u (stages modified and deleted, without new)
+
+
+............................................................................
+
+HOW TO CLONE THE FILES FROM GITHUB 
+Open git bash on that folder
+
+--> ls -la (it used to list the items of the file)
+           (it having (.git/) which stores all the hidden files and all information or changes about the file)
+
+--> git clone SSH_link_of_selected_file_of_github 
