@@ -47,7 +47,7 @@ Now, we have to create the New Repository in GitHub and then connect the Git wit
 
 Now, go to (setting) and then select (ssh and jpg key) and then go to (connecting to GitHub using ssh key) and then go to (Generating a new SSH key and adding it to the ssh-agent) and then go to (Generating a new ssh key) copy the text of 2nd step and then add your email as uploaded in git.
 
-And the run the command on git (eval $(ssh-agent -s) to show the agent pid (this portion the not necessary for beginners).
+And the run the command on git (eval $(ssh-agent -s) to show the agent pid (this portion is not necessary for beginners).
 
 then go to (Adding your SSH key to the ssh-agent) section and then go to step 3 and click on (Adding a new SSH key to your GitHub account) and then go to (Adding a new SSH key to your account) section copy the step 1 command (clip < ~/.ssh/id_ed25519.pub) and paste it in git and then paste the same command on the search panel and then copy the text of that search panel and then go to (ssh and gpg keys) in the setting and then click on (New SSH key) and fill the heading of that key and then paste the text in the description box and generate the key. 
 
